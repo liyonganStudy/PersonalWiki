@@ -1,5 +1,5 @@
 ---
-title: "shell command"
+title: "shell"
 date: 2017-08-31 14:56
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "vim command"
+title: "vim"
 date: 2017-08-31 17:30
 ---
 
