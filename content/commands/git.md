@@ -24,3 +24,18 @@ origin	https://github.com/liyonganStudy/PersonalWiki.git (push)
 ```java
 $ git remote set-url origin https://g.hz.netease.com/cloudmusic-android/Android
 ```
+
+### 切换分支
+#### 查看分支
+```java
+$ git branch --all
+```
+#### 切换分支
+```java
+# 如果本地没有分支
+$ git checkout -b <本地分支名> <远程分支名>
+# 如 git checkout -b 4.2.1 origin/4.2.1
+
+# 如果本地已有分支
+$ git checkout 4.2.1
+```
