@@ -17,3 +17,6 @@ Intent intent = new Intent();
 intent.setComponent(comp);  
 startActivity(intent);  
 ```
+
+### View.attachToWindow和detachFromWindow
+收到上述回调的前提是view需要被添加到根View里。
