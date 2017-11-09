@@ -2,8 +2,18 @@
 title: "git"
 date: 2017-09-08 10:08
 ---
+### git远程操作命令
+- git clone
+- git remote
+- git fetch
+- git pull
+- git push
 
-### git查看设置
+详见[Git远程操作详解](http://www.ruanyifeng.com/blog/2014/06/git_remote.html)
+
+![](http://image.beekka.com/blog/2014/bg2014061202.jpg)
+
+### git查看设置ß
 ```java
 $ git config --list
 ```
