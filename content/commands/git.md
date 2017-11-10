@@ -13,7 +13,7 @@ date: 2017-09-08 10:08
 
 ![](http://image.beekka.com/blog/2014/bg2014061202.jpg)
 
-### git查看设置ß
+### git查看设置
 ```java
 $ git config --list
 ```
