@@ -37,13 +37,6 @@ Replugin->>IPC: IPC.init(app)
 Replugin->>PMF: PMF.init(app)
 Replugin->>PMF: PMF.callAttach(app) 
 ```
-```mermaid
-sequenceDiagram
-Application->>Replugin: attachBaseContext()
-Replugin->>IPC: IPC.init(app)
-Replugin->>PMF: PMF.init(app)
-Replugin->>PMF: PMF.callAttach(app)
-```
 ### 流程图实例
 ```
 mermaid
