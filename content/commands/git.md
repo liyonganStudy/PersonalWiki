@@ -49,7 +49,31 @@ $ git checkout -b <本地分支名> <远程分支名>
 # 如果本地已有分支
 $ git checkout 4.2.1
 ```
+## 保持fork之后的项目和上游同步
+### 使用 git remote -v 查看当前的远程仓库地址，输出如下：
+```java
+origin  git@github.com:ibrother/staticblog.github.io.git (fetch)
+origin  git@github.com:ibrother/staticblog.github.io.git (push)
+```
+接下来运行 git remote add upstream https://github.com/staticblog/staticblog.github.io.git
 
+这条命令就算添加一个别名为 upstream（上游）的地址，指向之前 fork 的原仓库地址。git remote -v 输出如下：
+
+```java
+origin  git@github.com:ibrother/staticblog.github.io.git (fetch)
+origin  git@github.com:ibrother/staticblog.github.io.git (push)
+upstream        https://github.com/staticblog/staticblog.github.io.git (fetch)
+upstream        https://github.com/staticblog/staticblog.github.io.git (push)
+```
+之后运行下面几条命令，就可以保持本地仓库和上游仓库同步了
+
+```
+git fetch upstream
+git checkout master
+git merge upstream/master
+
+git push origin master
+```
 ## 实例操作gitbub网址
 ### 创建远程库
 1. 点击+号下的New repository 创建一个远程库，命名为GitOperate,
@@ -89,3 +113,4 @@ cd进入GitOperate，输入 *git clone https://github.com/FreeSunny/GitOperate.g
 1. git commit -m "Initial commit"
 
 1. git push -u origin master
+
