@@ -13,6 +13,16 @@ date: 2017-09-08 10:08
 
 ![](http://image.beekka.com/blog/2014/bg2014061202.jpg)
 
+### git创建远程分支
+```java
+// 创建study的本地分支
+$ git checkout -b study
+// 将本地分支study推到远程
+$ git push origin study
+// 从远程study分支拉取代码
+$ git pull origin study
+```
+
 ### git查看设置
 ```java
 $ git config --list
